@@ -75,3 +75,27 @@
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #fff inset;
 }
+
+.upsell {
+  background-image: url(assets/background.svg);
+  background-repeat: no-repeat;
+  padding: 122px 32px 108px 32px;
+}
+
+.upsell h2 {
+  color: #111111;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+
+.upsell p {
+  color: #111111;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
