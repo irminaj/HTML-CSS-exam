@@ -14,8 +14,9 @@
   padding: 32px;
 }
 
+/* Prideti paveiksliuka i hero */
+
 .text-container {
-  width: 274px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -64,6 +65,8 @@
   box-shadow: 2px 1000px 1px #fff inset;
 }
 
+/* Sutvarkyti button border spalva */
+
 .upsell {
   background-image: url(assets/background.svg);
   background-repeat: no-repeat;
@@ -89,13 +92,138 @@
 }
 
 .press {
-    padding: 32px;
-    padding-top: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  padding: 32px;
+  padding-top: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
 }
 
-.press img:nth-child(4) {
-    display: none;
+.press img:nth-child(5),
+.press img:nth-child(1) {
+  display: none;
+}
+
+/* sutvarkyti paveiksliukus */
+
+.showcase {
+  padding: 32px;
+}
+
+.showcase h2 {
+  color: #111111;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.showcase p {
+  color: #111111;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+
+.showcase p a {
+  color: #111111;
+  font-weight: 500;
+}
+
+.items {
+  display: flex;
+  gap: 50px;
+}
+
+.item {
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+
+.description {
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  display: flex;
+}
+
+.description-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.description-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.eth {
+  white-space: nowrap;
+}
+
+.description-left h2 {
+  color: #ff8139;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.description-left h3 {
+  color: #111111;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.description-left h4 {
+  color: #777777;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.description-right h2 {
+  color: #777777;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.description-right h3 {
+  display: inline-block;
+  color: #111111;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.eth img {
+  display: inline-block;
+}
+
+.description-right h4 {
+  color: #777777;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
 }
