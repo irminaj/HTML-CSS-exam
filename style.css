@@ -10,19 +10,23 @@
   padding: 32px;
 }
 
-.hero {
+.hero,
+.footer-upsell {
   padding: 32px;
 }
 
 /* Prideti paveiksliuka i hero */
 
-.text-container {
+.text-container,
+.footer-upsell {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.hero h3 {
+.hero h3,
+.footer-upsell h3,
+.footer-part-2 h3 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -31,7 +35,8 @@
   color: #ff3998;
 }
 
-.hero h2 {
+.hero h2,
+.footer-upsell h2 {
   font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 48px;
@@ -39,7 +44,8 @@
   color: #111111;
 }
 
-.hero p {
+.hero p,
+.footer-upsell p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -47,7 +53,8 @@
   color: #555555;
 }
 
-.hero button {
+.hero button,
+.footer-upsell button {
   width: 188px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -143,26 +150,23 @@
 }
 
 .description {
+  display: flex;
   padding: 24px;
   justify-content: space-between;
   align-items: center;
 }
 
-.description {
-  display: flex;
-}
-
 .description-left {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
 }
 
 .description-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 12px;
+  gap: 15px;
 }
 
 .eth {
@@ -226,4 +230,53 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
+}
+
+.footer-upsell {
+  border-top: solid 2px #eeeeee;
+  border-bottom: solid 2px #eeeeee;
+}
+
+.footer-part-1 {
+  padding-left: 32px;
+  padding-top: 32px;
+}
+
+.footer-part-1 > * {
+  margin-bottom: 15px;
+}
+
+.social-logo img {
+  margin-right: 5px;
+}
+
+.footer-part-2 h3, h4 {
+  color: #555555;
+}
+
+.footer-part-2 h4 {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.footer-part-2 {
+  padding-left: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-part-3 {
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.footer-part-3 h4 {
+  color: #999999;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
 }
