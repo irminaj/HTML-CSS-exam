@@ -143,6 +143,9 @@
 .items {
   display: flex;
   gap: 50px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 .item {
@@ -251,15 +254,16 @@
   margin-right: 5px;
 }
 
-.footer-part-2 h3, h4 {
+.footer-part-2 h3,
+h4 {
   color: #555555;
 }
 
 .footer-part-2 h4 {
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .footer-part-2 {
@@ -269,8 +273,8 @@
 }
 
 .footer-part-3 {
-    padding-left: 32px;
-    padding-top: 32px;
+  padding-left: 32px;
+  padding-top: 32px;
 }
 
 .footer-part-3 h4 {
