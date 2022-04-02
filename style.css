@@ -10,12 +10,29 @@
   padding: 32px;
 }
 
-.hero,
+.hero-wrapper,
 .footer-upsell {
   padding: 32px;
 }
 
-/* Prideti paveiksliuka i hero */
+.hero-wrapper {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-wrapper img {
+  height: 390px;
+  margin-left: 198px;
+  margin-top: -70px;
+  position: absolute;
+  width: 380px;
+}
+
+.hero-wrapper .text-container {
+  width: 270px;
+}
+
 
 .text-container,
 .footer-upsell {
@@ -24,7 +41,7 @@
   gap: 30px;
 }
 
-.hero h3,
+.hero-wrapper h3,
 .footer-upsell h3,
 .footer-part-2 h3 {
   font-family: "Inter", sans-serif;
@@ -35,7 +52,7 @@
   color: #ff3998;
 }
 
-.hero h2,
+.hero-wrapper h2,
 .footer-upsell h2 {
   font-family: "Inter", sans-serif;
   font-weight: 900;
@@ -44,7 +61,7 @@
   color: #111111;
 }
 
-.hero p,
+.hero-wrapper p,
 .footer-upsell p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -53,7 +70,7 @@
   color: #555555;
 }
 
-.hero button,
+.hero-wrapper button,
 .footer-upsell button {
   width: 188px;
   font-family: "Inter", sans-serif;
@@ -100,9 +117,10 @@
 }
 
 .press {
-  padding: 32px;
+  margin: 32px;
   padding-top: 0;
   display: grid;
+  grid-template-columns: fit-content;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 20px;
 }
