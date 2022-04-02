@@ -398,4 +398,19 @@ h4 {
     height: 467px;
     align-self: flex-end;
   }
+
+  .footer > * {
+    padding: 0px;
+  }
+
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-part-2 {
+    flex-basis: 50%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
 }
