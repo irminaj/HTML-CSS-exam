@@ -328,6 +328,10 @@ h4 {
   padding-right: 0;
 }
 
+.footer-part-3 h4:nth-child(2) {
+  display: none;
+}
+
 .footer-part-3 h4 {
   color: #999999;
   font-family: "Inter";
@@ -412,5 +416,14 @@ h4 {
     flex-basis: 50%;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+  }
+
+  .footer-part-3 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-part-3 h4:nth-child(2) {
+    display: inline;
   }
 }
