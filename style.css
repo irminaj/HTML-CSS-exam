@@ -287,7 +287,7 @@
 }
 
 .social-logo img {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .footer-part-2 h3,
@@ -295,6 +295,7 @@ h4 {
   color: #555555;
 }
 
+.footer-part-1 h4,
 .footer-part-2 h4 {
   font-family: "Inter";
   font-weight: 400;
@@ -303,14 +304,24 @@ h4 {
 }
 
 .footer-part-2 {
+  width: 350px;
   padding-left: 32px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: start;
+}
+
+.column h3 {
+  padding: 20px 0;
+}
+
+.column h4 {
+  padding-bottom: 15px;
 }
 
 .footer-part-3 {
-  padding-left: 32px;
-  padding-top: 32px;
+  padding: 32px;
+  padding-right: 0;
 }
 
 .footer-part-3 h4 {
