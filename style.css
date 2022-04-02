@@ -332,3 +332,50 @@ h4 {
   font-size: 20px;
   line-height: 20px;
 }
+
+@media only screen and (min-width: 1025px) {
+  .page-wrapper {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .hero-wrapper {
+    justify-content: space-between;
+  }
+
+  .hero-wrapper img {
+    position: static;
+    height: 55%;
+    width: 55%;
+    margin: 0px;
+  }
+
+  .hero-wrapper .text-container {
+    width: 600px;
+    justify-content: center;
+  }
+
+  .press {
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .press img:nth-child(1),
+  .press img:nth-child(5) {
+    display: inline;
+  }
+
+  .press img:nth-child(3),
+  .press img:nth-child(6) {
+    transform: none;
+  }
+
+  .press img:nth-child(2) {
+    display: none;
+  }
+
+  .press img {
+    min-width: 0px;
+  }
+}
